@@ -2,19 +2,20 @@
 <html>
 <head>
     <title>U.S. State Quarters and National Park Quarters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         .container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
         }
         .table-container, .classification-container {
-            width: 45%; /* Adjust as needed */
+            width: 100%;
         }
         .marker {
             border-left: 6px solid green;
             background-color: lightgrey;
             padding-left: 10px;
-            }
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -27,6 +28,14 @@
         img {
             width: 100px;
             height: 100px;
+        }
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+            }
+            .table-container, .classification-container {
+                width: 45%;
+            }
         }
     </style>
 </head>
