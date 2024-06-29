@@ -3,21 +3,13 @@
 <head>
     <title>U.S. State Quarters and National Park Quarters</title>
     <style>
-        /* Add a CSS reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         .container {
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
+            flex-wrap: wrap; /* Allows the flex items to wrap onto multiple lines */
         }
         .table-container, .classification-container {
-            width: 100%;
-            margin-bottom: 20px;
+            width: 100%; /* Full width on small screens */
         }
         .marker {
             border-left: 6px solid green;
@@ -40,12 +32,8 @@
 
         /* Media query for larger screens */
         @media (min-width: 768px) {
-            .container {
-                flex-direction: row;
-            }
             .table-container, .classification-container {
-                width: 45%;
-                margin-bottom: 0;
+                width: 45%; /* Adjust as needed */
             }
         }
     </style>
