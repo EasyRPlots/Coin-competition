@@ -4,12 +4,12 @@
     <title>U.S. State Quarters and National Park Quarters</title>
     <style>
         .container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap; /* Allows the flex items to wrap onto multiple lines */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
         .table-container, .classification-container {
-            width: 100%; /* Full width on small screens */
+            width: 100%; /* Adjust as needed */
         }
         .marker {
             border-left: 6px solid green;
@@ -29,11 +29,9 @@
             width: 100px;
             height: 100px;
         }
-
-        /* Media query for larger screens */
-        @media (min-width: 768px) {
-            .table-container, .classification-container {
-                width: 45%; /* Adjust as needed */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -45,6 +43,14 @@
     Each coin will grant a number of points . The person that ranks 1st
     when the collection is completed will get an exciting reward. In addition, this is a great way to keep Miguel happy! 
     </p>
+    <ol>
+        <h3>Rules</h3>
+        <li>Each coin given to me will be interchange for another 25 cents coin</li>
+        <li>Each State Quarter will give 2 points</li>
+        <li>Each National Park Quarter will grant 3 points</li>
+        <li>The winner of the Olympics will be invited to any non-alcoholic beverage from Common Grounds</li>
+        <th>*By university policy, PhD students are expected to provide the State and National Park Quarter from their home State</th>
+    </ul>
     <h1>U.S. States and National Parks Quarters</h1>
     <div class="container">
         <div class="table-container">
@@ -451,15 +457,7 @@
             </table>
         </div>
         <div class="classification-container">
-            <ol>
-                <h2>The Loose Change Olympics</h2>
-                <h3>Rules</h3>
-                <li>Each coin given to me will be interchange for another 25 cents coin</li>
-                <li>Each State Quarter will give 2 points</li>
-                <li>Each National Park Quarter will grant 3 points</li>
-                <li>The winner of the Olympics will be invited to any non-alcoholic beverage from Common Grounds</li>
-                <th>*By university policy, PhD students are expected to provide the State and National Park Quarter from their home State</th>
-            </ul>
+            
             <h2>Classification</h2>
 <table style="width:100%; border-collapse: collapse;">
     <tr style="background-color: #f2f2f2;">
