@@ -1,672 +1,959 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
+
 <head>
-    <title>U.S. State Quarters and National Park Quarters</title>
-    <style>
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        .table-container, .classification-container {
-            width: 100%; /* Adjust as needed */
-        }
-        .marker {
-            border-left: 6px solid green;
-            background-color: lightgrey;
-            padding-left: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 15px;
-            text-align: left;
-        }
-        img {
-            width: 100px;
-            height: 100px;
-        }
-        .progress-bar {
-        position: relative;
-        background-color: lightgrey;
-        width: 100px; /* Adjust the width as needed */
-        height: 20px; /* Adjust the height as needed */
-        border-radius: 5px;
-        overflow: hidden;
-        display: inline-block;
-        margin-right: 5px; /* Adjust margin as needed */
-    }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    .progress {
-        background-color: blue;
-        height: 100%;
-        position: relative;
-    }
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-    .progress-text {
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        color: white;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 12px; /* Adjust font size as needed */
-    }
-    .percentage-text {
-        display: inline-block;
-        vertical-align: top;
-    }
-        @media screen and (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+	<title>US Quarter Collection</title>
 </head>
+
 <body>
-    <h1>Welcome to the Loose Change Olympics</h1>
-<p>The Loose Change Olympics is a fun and engaging activity where participants exchange quarters from each US state and National Park with Miguel. Each new coin (not already collected) will grant a number of points. The person that ranks 1st when the collection is completed will get an exciting reward. In addition, this is a great way to keep Miguel happy! 
-    </p>
-    <ol>
-        <h3>Rules</h3>
-        <li>Each coin given to me will be exchanged for another 25-cents coin</li>
-        <li>Each State Quarter will grant 2 points</li>
-        <li>Each National Park Quarter will grant 3 points</li>
-        <li>Each American Women Quarter will grant 4 points <span style="color: red;">(NEW!)</span></li>
-        <li>The winner of the Olympics will be invited to any non-alcoholic beverage of their choice from Common Grounds</li>
-        <th>*In accordance with university policy, PhD students are expected to provide the State and National Park Quarter from their home State</th>
-    </ul>
-    <h1>U.S. States and National Parks Quarters</h1>
-    <p> Coins already collected appear with a <span style="color: #90EE90;">green</span> color background</p>
-    <div class="container">
-        <div class="table-container">
-            <table>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Alabama</th>
-                    <th style="text-align: center;" colspan="2">Alaska</th>
-                    <th style="text-align: center;" colspan="2">Arizona</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img/AL_S.png" alt="Alabama State Quarter"></td>
-                    <td style="background-color: #90EE90;"><img src="img/AL_P.png" alt="Alabama National Park Quarter"></td>
-                    <td style="background-color: #90EE90;"><img src="img\AK_S.png"></td>
-                    <td><img src="img\AK_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\AZ_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\AZ_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Arkansas</th>
-                    <th style="text-align: center;" colspan="2">California</th>
-                    <th style="text-align: center;" colspan="2">Colorado</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\AR_S.png"></td>
-                    <td><img src="img\AR_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\CA_S.png"></td>
-                    <td><img src="img\CA_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\CO_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\CO_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Conneccticut</th>
-                    <th style="text-align: center;" colspan="2">Delaware</th>
-                    <th style="text-align: center;" colspan="2">Florida</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\CT_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\CT_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\DE_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\DE_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\FL_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\FL_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Georgia</th>
-                    <th style="text-align: center;" colspan="2">Hawaii</th>
-                    <th style="text-align: center;" colspan="2">Idaho</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\GA_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\GA_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\HI_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\HI_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\ID_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\ID_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Illinois</th>
-                    <th style="text-align: center;" colspan="2">Indiana</th>
-                    <th style="text-align: center;" colspan="2">Iowa</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\IL_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\IL_P.png"></td>
-                    <td><img src="img\IN_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\IN_P.png"></td>
-                    <td><img src="img\IA_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\IA_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Kansas</th>
-                    <th style="text-align: center;" colspan="2">Kentucky</th>
-                    <th style="text-align: center;" colspan="2">Louisiana</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img/KS_S.png" alt="Kansas State Quarter"></td>
-                    <td style="background-color: #90EE90;"><img src="img/KS_P.png" alt="Kansas National Park Quarter"></td>
-                    <td style="background-color: #90EE90;"><img src="img\KY_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\KY_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\LA_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\LA_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Maine</th>
-                    <th style="text-align: center;" colspan="2">Maryland</th>
-                    <th style="text-align: center;" colspan="2">Massachusetts</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\ME_S.png"></td>
-                    <td><img src="img\ME_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MD_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MD_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MA_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MA_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Michigan</th>
-                    <th style="text-align: center;" colspan="2">Minnesota</th>
-                    <th style="text-align: center;" colspan="2">Mississippi</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\MI_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MI_P.png"></td>
-                    <td><img src="img\MN_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MN_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MS_S.png"></td>
-                    <td><img src="img\MS_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Missouri</th>
-                    <th style="text-align: center;" colspan="2">Montana</th>
-                    <th style="text-align: center;" colspan="2">Nebraska</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\MO_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MO_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MT_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\MT_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NE_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NE_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Nevada</th>
-                    <th style="text-align: center;" colspan="2">New Hampshire</th>
-                    <th style="text-align: center;" colspan="2">New Jersey</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\NV_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NV_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NH_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NH_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NJ_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NJ_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">New Mexico</th>
-                    <th style="text-align: center;" colspan="2">New York</th>
-                    <th style="text-align: center;" colspan="2">North Carolina</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td><img src="img\NM_S.png"></td>
-                    <td><img src="img\NM_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NY_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NY_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NC_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\NC_P.png"></td>  
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">North Dakota</th>
-                    <th style="text-align: center;" colspan="2">Ohio</th>
-                    <th style="text-align: center;" colspan="2">Oklahoma</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\ND_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\ND_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\OH_S.png"></td>
-                    <td><img src="img\OH_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\OK_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\OK_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Oregon</th>
-                    <th style="text-align: center;" colspan="2">Pennsylvania</th>
-                    <th style="text-align: center;" colspan="2">Rhode Island</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\OR_S.png"></td>
-                    <td><img src="img\OR_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\PA_S.png"></td>
-                    <td><img src="img\PA_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\RI_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\RI_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">South Carolina</th>
-                    <th style="text-align: center;" colspan="2">South Dakota</th>
-                    <th style="text-align: center;" colspan="2">Tennessee</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\SC_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\SC_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\SD_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\SD_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\TN_S.png"></td>
-                    <td><img src="img\TN_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Texas</th>
-                    <th style="text-align: center;" colspan="2">Utah</th>
-                    <th style="text-align: center;" colspan="2">Vermont</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\TX_S.png"></td>
-                    <td><img src="img\TX_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\UT_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\UT_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\VT_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\VT_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Virginia</th>
-                    <th style="text-align: center;" colspan="2">Washington</th>
-                    <th style="text-align: center;" colspan="2">West Virginia</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\VA_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\VA_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\WA_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\WA_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\WV_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\WV_P.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Wisconsin</th>
-                    <th style="text-align: center;" colspan="2">Wyoming</th>
-                    <th style="text-align: center;" colspan="2">American Samoa</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\WI_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\WI_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\WY_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\WY_P.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\Samoa_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\Samoa.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">District of Columbia</th>
-                    <th style="text-align: center;" colspan="2">Guam</th>
-                    <th style="text-align: center;" colspan="2">Northern Mariana Islands</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                </tr>
-                <tr>
-                    <td style="background-color: #90EE90;"><img src="img\Columbia_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\Columbia.png"></td>
-                    <td><img src="img\Guam_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\Guam.png"></td>
-                    <td><img src="img\Mariana_S.png"></td>
-                    <td><img src="img\Mariana.png"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: center;" colspan="2">Puerto Rico</th>
-                    <th style="text-align: center;" colspan="2">U.S. Virgin Islands</th>
-                    <th style="text-align: center;" colspan="2">%Total</th>
-                </tr>
-                <tr>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td>National Park Quarter</td>
-                    <td>State Quarter</td>
-                    <td >National Park Quarter</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="img\Puerto_S.png"></td>
-                    <td><img src="img\Puerto_Rico.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\Virgin_S.png"></td>
-                    <td style="background-color: #90EE90;"><img src="img\Virgin_Island.png"></td>
-                    <td>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 87.5%;">
-                                <span class="progress-text">49/56</span>
-                            </div>
-                        </div>
-                        <span class="percentage-text">87.5%</span>
-                    </td>
-                    <td>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 76.8%;">
-                                <span class="progress-text">43/56</span>
-                            </div>
-                        </div>
-                        <span class="percentage-text">76.8%</span>
-                    </td>
-                </tr>
-            </tbody>
-            </table>
-            <h1>American Women Quarters</h1>
-        </div>
-        <div class="classification-container">
-            
-            <h2>Classification</h2>
-<table style="width:100%; border-collapse: collapse;">
-                <tr style="background-color: #f2f2f2;">
-                <th style="border: 1px solid #dddddd; padding: 8px;">Name</th>
-                <th style="border: 1px solid #dddddd; padding: 8px;">Total Coins</th>
-                <th style="border: 1px solid #dddddd; padding: 8px;">State Coins</th>
-                <th style="border: 1px solid #dddddd; padding: 8px;">National Park Coins</th>
-                <th style="border: 1px solid #dddddd; padding: 8px;">US Women Coins</th>
-                <th style="border: 1px solid #dddddd; padding: 8px;">Points</th>
-                </tr>
-                <tr>
-                <td style="border: 1px solid #dddddd; padding: 8px; border-left: 6px solid green;">Maria</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">22</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">14</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">7</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">53</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px; border-left: 6px solid orange;">Barani</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">16</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">8</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">8</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">40</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;border-left: 6px solid red;">Javier</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">6</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">2</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">3</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">17</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Juan</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">5</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">3</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">2</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">12</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Kirby</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">5</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">3</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">2</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">12</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Adam</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">3</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">9</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Kishu</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">3</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">8</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Angelo</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">2</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">2</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">6</td>
-                <tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Baby Enrique</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">2</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">5</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Boyu</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">3</td>
-                </tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Shruti</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">3</td>
-                <tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">Sandra</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">1</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">0</td>
-                <td style="text-align: center; border: 1px solid #dddddd; padding: 8px;">2</td>
-                <tr>
-            </table>
-        </div>
-            <div class="container">
-                <div class="table-container">
-                    <table>
-                        <tr>
-                            <th style="text-align: center;">Maya Angelou</th>
-                            <th style="text-align: center;">Sally Ride</th>
-                            <th style="text-align: center;">Wilma Mankiller</th>
-                            <th style="text-align: center;">Nina Otero-Warren</th>
-                            <th style="text-align: center;">Anna May Wong</th>
-                            <th style="text-align: center;">%Total</th>
-                        <tr>
-                            <td style="background-color: #90EE90;"><img src="img\W3.png"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W1.png"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W15.png"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W2.png"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W4.jpg"></td>
-                            <td>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 55%;">
-                                        <span class="progress-text">11/20</span>
-                                    </div>
-                                </div>
-                                <span class="percentage-text">55%</span>
-                            </td>
-                        <tr>
-                            <th style="text-align: center;">Bessie Coleman</th>
-                            <th style="text-align: center;">Edith Kanaka'ole</th>
-                            <th style="text-align: center;">Eleanor Roosevelt</th>
-                            <th style="text-align: center;">Jovita Idar</th>
-                            <th style="text-align: center;">Maria Tallchief</th>
-                        <tr>
-                            <td style="background-color: #90EE90;"><img src="img\W14.jpg"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W13.jpg"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W12.jpg"></td>
-                            <td><img src="img\W11.jpg"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W10.jpg"></td>
-                        </tr>
-                        <th style="text-align: center;">Pauli Murray</th>
-                            <th style="text-align: center;">Patsy Mink</th>
-                            <th style="text-align: center;">Mary Edwards Walker</th>
-                            <th style="text-align: center;">Celia Cruz</th>
-                            <th style="text-align: center;">Zitkala-Sa</th>
-                        <tr>
-                            <td><img src="img\W6.jpg"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W7.jpg"></td>
-                            <td style="background-color: #90EE90;"><img src="img\W8.jpg"></td>
-                            <td><img src="img\W9.jpg"></td>
-                            <td><img src="img\W5.jpg"></td>
-                        </tr>
-                            <th style="text-align: center;">TBD</th>
-                            <th style="text-align: center;">TBD</th>
-                            <th style="text-align: center;">TBD</th>
-                            <th style="text-align: center;">TBD</th>
-                            <th style="text-align: center;">TBD</th>
-                        <tr>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                            <td>TBD</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="classification-container">
-        </div>
-    </div>
+	<header class="cd-header">
+		<h1>US Quarter Collection</h1>
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder">
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li>
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".Obtained"><a href="#0" data-type="Obtained">Collected</a></li>
+					<li class="filter" data-filter=".Pending"><a href="#0" data-type="Pending">Pending</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+			<a href="#0" class="cd-classification-trigger">Classification</a>
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<div class="cd-classification">
+			<form>
+				<div class="cd-classification-block">
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Total Coins</th>
+							<th>State Coins</th>
+							<th>National Park Coins</th>
+							<th>US Women Coins</th>
+							<th>Points</th>
+						</tr>
+						<tr>
+							<td class="green">Maria</td>
+							<td>22</td>
+							<td>14</td>
+							<td>7</td>
+							<td>1</td>
+							<td>53</td>
+						</tr>
+						<tr>
+							<td class="orange">Barani</td>
+							<td>16</td>
+							<td>8</td>
+							<td>8</td>
+							<td>0</td>
+							<td>40</td>
+						</tr>
+						<tr>
+							<td class="red">Javier</td>
+							<td>6</td>
+							<td>2</td>
+							<td>3</td>
+							<td>1</td>
+							<td>17</td>
+						</tr>
+						</tr>
+						<td>Juan</td>
+						<td>5</td>
+						<td>3</td>
+						<td>2</td>
+						<td>0</td>
+						<td>12</td>
+						</tr>
+						<td>Kirby</td>
+						<td>5</td>
+						<td>3</td>
+						<td>2</td>
+						<td>0</td>
+						<td>12</td>
+						</tr>
+						<td>Adam</td>
+						<td>3</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>9</td>
+						</tr>
+						<td>Kishu</td>
+						<td>3</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>9</td>
+						</tr>
+						<td>Angelo</td>
+						<td>2</td>
+						<td>0</td>
+						<td>2</td>
+						<td>0</td>
+						<td>6</td>
+						</tr>
+						<td>Baby Enrique</td>
+						<td>2</td>
+						<td>1</td>
+						<td>1</td>
+						<td>0</td>
+						<td>5</td>
+						</tr>
+						<td>Boyu</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>3</td>
+						</tr>
+						<td>Shruti</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>3</td>
+						</tr>
+						<td>Sandra</td>
+						<td>1</td>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+						<td>2</td>
+						</tr>
+					</table>
+				</div> <!-- cd-classification-block -->
+			</form>
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-classification -->
+
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Alabama</figcaption>
+						<img src="img/AL_S.png" alt="Alabama State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Alabama</figcaption>
+						<img src="img/AL_P.png" alt="Alabama National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Alaska</figcaption>
+						<img src="img/AK_S.png" alt="Alaska State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Alaska</figcaption>
+						<img src="img/AK_P.png" alt="Alaska National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Arizona</figcaption>
+						<img src="img/AZ_S.png" alt="Arizona State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Arizona</figcaption>
+						<img src="img/AZ_P.png" alt="Arizona National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Arkansas</figcaption>
+						<img src="img/AR_S.png" alt="Arkansas State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Arkansas</figcaption>
+						<img src="img/AR_P.png" alt="Arkansas National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>California</figcaption>
+						<img src="img/CA_S.png" alt="California State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>California</figcaption>
+						<img src="img/CA_P.png" alt="California National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Colorado</figcaption>
+						<img src="img/CO_S.png" alt="Colorado State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Colorado</figcaption>
+						<img src="img/CO_P.png" alt="Colorado National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Connecticut</figcaption>
+						<img src="img/CT_S.png" alt="Connecticut State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Connecticut</figcaption>
+						<img src="img/CT_P.png" alt="Connecticut National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Delaware</figcaption>
+						<img src="img/DE_S.png" alt="Delaware State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Delaware</figcaption>
+						<img src="img/DE_P.png" alt="Delaware National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Florida</figcaption>
+						<img src="img/FL_S.png" alt="Florida State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Florida</figcaption>
+						<img src="img/FL_P.png" alt="Florida National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Georgia</figcaption>
+						<img src="img/GA_S.png" alt="Georgia State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Georgia</figcaption>
+						<img src="img/GA_P.png" alt="Georgia National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Hawaii</figcaption>
+						<img src="img/HI_S.png" alt="Hawaii State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Hawaii</figcaption>
+						<img src="img/HI_P.png" alt="Hawaii National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Idaho</figcaption>
+						<img src="img/ID_S.png" alt="Idaho State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Idaho</figcaption>
+						<img src="img/ID_P.png" alt="Idaho National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Illinois</figcaption>
+						<img src="img/IL_S.png" alt="Illinois State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Illinois</figcaption>
+						<img src="img/IL_P.png" alt="Illinois National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check1 radio2 option3">
+					<figure>
+						<figcaption>Indiana</figcaption>
+						<img src="img/IN_S.png" alt="Indiana State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Indiana</figcaption>
+						<img src="img/IN_P.png" alt="Indiana National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check1 radio2 option3">
+					<figure>
+						<figcaption>Iowa</figcaption>
+						<img src="img/IA_S.png" alt="Iowa State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Iowa</figcaption>
+						<img src="img/IA_P.png" alt="Iowa National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Kansas</figcaption>
+						<img src="img/KS_S.png" alt="Kansas State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Kansas</figcaption>
+						<img src="img/KS_P.png" alt="Kansas National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Kentucky</figcaption>
+						<img src="img/KY_S.png" alt="Kentucky State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Kentucky</figcaption>
+						<img src="img/KY_P.png" alt="Kentucky National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Louisiana</figcaption>
+						<img src="img/LA_S.png" alt="Louisiana State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Louisiana</figcaption>
+						<img src="img/LA_P.png" alt="Louisiana National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Maine</figcaption>
+						<img src="img/ME_S.png" alt="Maine State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Maine</figcaption>
+						<img src="img/ME_P.png" alt="Maine National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Maryland</figcaption>
+						<img src="img/MD_S.png" alt="Maryland State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Maryland</figcaption>
+						<img src="img/MD_P.png" alt="Maryland National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Massachusetts</figcaption>
+						<img src="img/MA_S.png" alt="Massachusetts State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Massachusetts</figcaption>
+						<img src="img/MA_P.png" alt="Massachusetts National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Michigan</figcaption>
+						<img src="img/MI_S.png" alt="Michigan State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Michigan</figcaption>
+						<img src="img/MI_P.png" alt="Michigan National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check1 radio2 option3">
+					<figure>
+						<figcaption>Minnesota</figcaption>
+						<img src="img/MN_S.png" alt="Minnesota State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Minnesota</figcaption>
+						<img src="img/MN_P.png" alt="Minnesota National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Mississippi</figcaption>
+						<img src="img/MS_S.png" alt="Mississippi State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Mississippi</figcaption>
+						<img src="img/MS_P.png" alt="Mississippi National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Missouri</figcaption>
+						<img src="img/MO_S.png" alt="Missouri State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Missouri</figcaption>
+						<img src="img/MO_P.png" alt="Missouri National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Montana</figcaption>
+						<img src="img/MT_S.png" alt="Montana State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Montana</figcaption>
+						<img src="img/MT_P.png" alt="Montana National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Nebraska</figcaption>
+						<img src="img/NE_S.png" alt="Nebraska State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Nebraska</figcaption>
+						<img src="img/NE_P.png" alt="Nebraska National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Nevada</figcaption>
+						<img src="img/NV_S.png" alt="Nevada State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Nevada</figcaption>
+						<img src="img/NV_P.png" alt="Nevada National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>New Hampshire</figcaption>
+						<img src="img/NH_S.png" alt="New Hampshire State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>New Hampshire</figcaption>
+						<img src="img/NH_P.png" alt="New Hampshire National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>New Jersey</figcaption>
+						<img src="img/NJ_S.png" alt="New Jersey State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>New Jersey</figcaption>
+						<img src="img/NJ_P.png" alt="New Jersey National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check1 radio2 option3">
+					<figure>
+						<figcaption>New Mexico</figcaption>
+						<img src="img/NM_S.png" alt="New Mexico State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>New Mexico</figcaption>
+						<img src="img/NM_P.png" alt="New Mexico National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>New York</figcaption>
+						<img src="img/NY_S.png" alt="New York State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>New York</figcaption>
+						<img src="img/NY_P.png" alt="New York National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>North Carolina</figcaption>
+						<img src="img/NC_S.png" alt="North Carolina State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>North Carolina</figcaption>
+						<img src="img/NC_P.png" alt="North Carolina National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>North Dakota</figcaption>
+						<img src="img/ND_S.png" alt="North Dakota State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>North Dakota</figcaption>
+						<img src="img/ND_P.png" alt="North Dakota National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Ohio</figcaption>
+						<img src="img/OH_S.png" alt="Ohio State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Ohio</figcaption>
+						<img src="img/OH_P.png" alt="Ohio National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Oklahoma</figcaption>
+						<img src="img/OK_S.png" alt="Oklahoma State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Oklahoma</figcaption>
+						<img src="img/OK_P.png" alt="Oklahoma National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Oregon</figcaption>
+						<img src="img/OR_S.png" alt="Oregon State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Oregon</figcaption>
+						<img src="img/OR_P.png" alt="Oregon National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Pennsylvania</figcaption>
+						<img src="img/PA_S.png" alt="Pennsylvania State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Pennsylvania</figcaption>
+						<img src="img/PA_P.png" alt="Pennsylvania State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Rhode Island</figcaption>
+						<img src="img/RI_S.png" alt="Rhode Island State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Rhode Island</figcaption>
+						<img src="img/RI_P.png" alt="Rhode Island National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>South Carolina</figcaption>
+						<img src="img/SC_S.png" alt="South Carolina State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>South Carolina</figcaption>
+						<img src="img/SC_P.png" alt="South Carolina National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>South Dakota</figcaption>
+						<img src="img/SD_S.png" alt="South Dakota State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>South Dakota</figcaption>
+						<img src="img/SD_P.png" alt="South Dakota National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Tennessee</figcaption>
+						<img src="img/TN_S.png" alt="Tennessee State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Tennessee</figcaption>
+						<img src="img/TN_P.png" alt="Tennessee National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Texas</figcaption>
+						<img src="img/TX_S.png" alt="Texas State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Texas</figcaption>
+						<img src="img/TX_P.png" alt="Texas National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Utah</figcaption>
+						<img src="img/UT_S.png" alt="Utah State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Utah</figcaption>
+						<img src="img/UT_P.png" alt="Utah National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Vermont</figcaption>
+						<img src="img/VT_S.png" alt="Vermont State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Vermont</figcaption>
+						<img src="img/VT_P.png" alt="Vermont National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Virginia</figcaption>
+						<img src="img/VA_S.png" alt="Virginia State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Virginia</figcaption>
+						<img src="img/VA_P.png" alt="Virginia National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Washington</figcaption>
+						<img src="img/WA_S.png" alt="Washington State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Washington</figcaption>
+						<img src="img/WA_P.png" alt="Washington National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>West Virginia</figcaption>
+						<img src="img/WV_S.png" alt="West Virginia State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>West Virginia</figcaption>
+						<img src="img/WV_P.png" alt="West Virginia National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Wisconsin</figcaption>
+						<img src="img/WI_S.png" alt="Wisconsin State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Wisconsin</figcaption>
+						<img src="img/WI_P.png" alt="Wisconsin National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>Wyoming</figcaption>
+						<img src="img/WY_S.png" alt="Wyoming State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Wyoming</figcaption>
+						<img src="img/WY_P.png" alt="Wyoming National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>American Samoa</figcaption>
+						<img src="img/Samoa_S.png" alt="American Samoa State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>American Samoa</figcaption>
+						<img src="img/Samoa.png" alt="American Samoa National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>District of Columbia</figcaption>
+						<img src="img/Columbia_S.png" alt="District of Columbia State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>District of Columbia</figcaption>
+						<img src="img/Columbia.png" alt="District of Columbia National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check1 radio2 option3">
+					<figure>
+						<figcaption>Guam</figcaption>
+						<img src="img/Guam_S.png" alt="Guam State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>Guam</figcaption>
+						<img src="img/Guam.png" alt="Guam National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check1 radio2 option3">
+					<figure>
+						<figcaption>Northern Mariana Islands</figcaption>
+						<img src="img/Mariana_S.png" alt="Northern Mariana Islands State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Northern Mariana Islands</figcaption>
+						<img src="img/Mariana.png" alt="Northern Mariana Islands National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check1 radio2 option3">
+					<figure>
+						<figcaption>Puerto Rico</figcaption>
+						<img src="img/Puerto_S.png" alt="Puerto Rico State Quarter">
+					</figure>
+				</li>
+				<li class="mix Pending check2 radio2 option3">
+					<figure>
+						<figcaption>Puerto Rico</figcaption>
+						<img src="img/Puerto_Rico.png" alt="Puerto Rico National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check1 radio2 option3">
+					<figure>
+						<figcaption>U.S. Virgin Islands</figcaption>
+						<img src="img/Virgin_S.png" alt="U.S. Virgin Islands State Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check2 radio2 option3">
+					<figure>
+						<figcaption>U.S. Virgin Islands</figcaption>
+						<img src="img/Virgin_Island.png" alt="U.S. Virgin Islands National Park Quarter">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Maya Angelou</figcaption>
+						<img src="img\W3.png" alt="Maya Angelou">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Sally Ride</figcaption>
+						<img src="img\W1.png" alt="Sally Ride">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Wilma Mankiller</figcaption>
+						<img src="img\W15.jpg" alt="Wilma Mankiller">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Nina Otero-Warren</figcaption>
+						<img src="img\W2.png" alt="Nina Otero-Warren">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Anna May Wong</figcaption>
+						<img src="img\W4.jpg" alt="Anna May Wong">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Bessie Coleman</figcaption>
+						<img src="img/W14.jpg" alt="Bessie Coleman">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Edith Kanaka'ole</figcaption>
+						<img src="img/W13.jpg" alt="Edith Kanaka'ole">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Eleanor Roosevelt</figcaption>
+						<img src="img/W12.jpg" alt="Eleanor Roosevelt">
+					</figure>
+				</li>
+				<li class="mix Pending check3 radio2 option3">
+					<figure>
+						<figcaption>Jovita Idar</figcaption>
+						<img src="img/W11.jpg" alt="Jovita Idar">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Maria Tallchief</figcaption>
+						<img src="img/W10.jpg" alt="Maria Tallchief">
+					</figure>
+				</li>
+				<li class="mix Pending check3 radio2 option3">
+					<figure>
+						<figcaption>Pauli Murray</figcaption>
+						<img src="img/W6.jpg" alt="Pauli Murray">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Patsy Mink</figcaption>
+						<img src="img/W7.jpg" alt="Patsy Mink">
+					</figure>
+				</li>
+				<li class="mix Obtained check3 radio2 option3">
+					<figure>
+						<figcaption>Mary Edwards Walker</figcaption>
+						<img src="img/W8.jpg" alt="Mary Edwards Walker">
+					</figure>
+				</li>
+				<li class="mix Pending check3 radio2 option3">
+					<figure>
+						<figcaption>Celia Cruz</figcaption>
+						<img src="img/W9.jpg" alt="Celia Cruz">
+					</figure>
+				</li>
+				<li class="mix Pending check3 radio2 option3">
+					<figure>
+						<figcaption>Zitkala-Sa</figcaption>
+						<img src="img/W5.jpg" alt="Zitkala-Sa">
+					</figure>
+				</li>
+				</li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+
+				<div class="cd-filter-block">
+					<h4>Select Quarter Collection</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+							<label class="checkbox-label" for="checkbox1">US States</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">National Parks</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">American Women</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script>
+		// Toggle classification section visibility
+		document.querySelector('.cd-classification-trigger').addEventListener('click', function () {
+			document.querySelector('.cd-classification').style.display = 'block';
+		});
+		document.querySelector('.cd-close').addEventListener('click', function () {
+			document.querySelector('.cd-classification').style.display = 'none';
+		});
+	</script>
 </body>
+
 </html>
